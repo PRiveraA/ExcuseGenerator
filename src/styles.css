@@ -3,10 +3,12 @@ h1 {
   margin-right: auto;
 }
 
-.static {
-  margin-top: 40em;
-}
-
 .random {
   margin-top: 3em;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
