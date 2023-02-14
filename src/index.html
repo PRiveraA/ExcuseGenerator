@@ -10,29 +10,35 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
     <body>
+      <h1>OMG! you will not believe me, but...</h1>
       <h1 id="excuse"></h1>
-  
+
       <script>
-        let who = ['The dog', 'My grandma', 'His turtle', 'My bird'];
-        let action = ['ate', 'peed', 'crushed', 'broke'];
-        let what = ['my homework', 'the keys', 'the car'];
-        let when = ['before the class', 'right on time', 'when I finished', 'during my lunch', 'while I was praying'];
-  
+        let who = ["The dog", "My grandma", "His turtle", "My bird"];
+        let action = ["ate", "peed", "crushed", "broke"];
+        let what = ["my homework", "the keys", "the car"];
+        let when = [
+          "before the class",
+          "right on time",
+          "when I finished",
+          "during my lunch",
+          "while I was praying"
+        ];
+
         let excuse = document.getElementById("excuse");
-  
+
         function generateExcuse() {
           let randomWho = who[Math.floor(Math.random() * who.length)];
           let randomAction = action[Math.floor(Math.random() * action.length)];
           let randomWhat = what[Math.floor(Math.random() * what.length)];
           let randomWhen = when[Math.floor(Math.random() * when.length)];
-  
+
           excuse.innerHTML = `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}.`;
         }
-  
+
         generateExcuse();
       </script>
     </body>
